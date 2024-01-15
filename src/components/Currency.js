@@ -19,13 +19,22 @@ const Currency = () => {
             color: 'white',
             width: 250,
             height: 60,
-            textalign: 30
-          }} > Currency {
-      <select name="Currency" id="Currency" onChange={event=>changeCurrency(event.target.value)}>
-        <option value="$">$ Dollar</option>
-        <option value="£">£ Pound</option>
-        <option value="€">€ Euro</option>
-        <option value="₹">₹ Ruppee</option>
+          }} > 
+          
+          {
+      <select name="Currency" id="Currency" 
+      style={{
+        backgroundColor: 'lightgreen',
+        fontFamily: 'arial',
+        color: 'white',
+        width: 250,
+        height: 60,
+      }}
+      onChange={event=>changeCurrency(event.target.value)}>
+        <option style={{backgroundColor:'lightgreen'}} value="$">Currency $ Dollar</option>
+        <option style={{backgroundColor:'lightgreen'}} value="£">£ Pound</option>
+        <option style={{backgroundColor:'lightgreen'}} value="€">€ Euro</option>
+        <option style={{backgroundColor:'lightgreen'}} value="₹">₹ Ruppee</option>
       </select> 
       } 
     </div>
